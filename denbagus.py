@@ -151,13 +151,12 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		asu = random.choice([m,k,h,b,u])
 		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
 		cok=open(".cok.txt", "w").write(cookie)
-		print(f'  {x}[{h}•{x}]{h} LOGIN BERHASIL.........!!!!{x} ');time.sleep(1)
+		print(f'  LOGIN BERHASIL.........!!!! ');time.sleep(1)
 		exit()
 	except Exception as e:
 		os.system("rm -f .token.txt")
@@ -212,13 +211,13 @@ def menu(my_name,my_id):
 		print('>> Pilih Yang Bener Dong!! ')
 		back()
 def error():
-	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'>> Maaf Fitur Ini Masih Di Perbaiki ')
 	time.sleep(4)
 	back()
 #-----------------[ HASIL-CRACK ]-----------------#
 def result():
-	print(f' 1. Hasil {h}OK{x} Anda ')
-	print(f' 2. Hasil {k}CP{x} Anda ')
+	print(f' 1. Hasil OK Anda ')
+	print(f' 2. Hasil CP Anda ')
 	print(' 3. Kembali	')
 	kz = input(f'\n>> Pilih : ')
 	if kz in ['2']:
@@ -242,7 +241,7 @@ def result():
 					nom = ''+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'%s. %s ({k} %s {x}Idz )'%(nom,isi,len(hem)))
+					print(f'%s. %s ( %s Idz )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
 					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
@@ -259,10 +258,10 @@ def result():
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
-				print(f'{x}{k}{cpkuni[0]}|{cpkuni[1]}')
+				print(f'{cpkuni[0]}|{cpkuni[1]}')
 				nocp +=1
 			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			input(f' Klik Enter ]')
 			back()
 	elif kz in ['1']:
 		try:vin = os.listdir('OK')
@@ -285,10 +284,10 @@ def result():
 					nom = '0'+str(cih)
 					lol.update({str(cih):str(isi)})
 					lol.update({nom:str(isi)})
-					print(f'%s. %s ( {h}%s{x} Idz )'%(nom,isi,len(hem)))
+					print(f'%s. %s ( %s Idz )'%(nom,isi,len(hem)))
 				else:
 					lol.update({str(cih):str(isi)})
-					print(f'%s. %s ({h} %s {x}Idz )'%(cih,isi,(len(hem))))
+					print(f'%s. %s ( %s Idz )'%(cih,isi,(len(hem))))
 			geeh = input(f'\nPilih : ')
 			try:geh = lol[geeh]
 			except KeyError:
@@ -303,10 +302,10 @@ def result():
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
 				print('')
-				print(f'{x}{h}{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
+				print(f'{cpkuni[0]}|{cpkuni[1]}|{cpkuni[2]}')
 				nocp +=1
 			print('')
-			input(f'{x}[{m} Klik Enter{x} ]')
+			input(f' Klik Enter ]')
 			back()
 	elif kz in ['3']:
 		back()
@@ -350,14 +349,14 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f' Total ID Yang Terkumpul {h}'+str(len(id)))
+		print(f' Total ID Yang Terkumpul '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f'{x}')
+		print(f'')
 		print('>> Sinyal Jelek ')
 		back()
 	except (KeyError,IOError):
-		print(f'>>{k} Pertemanan Tidak Public {x}')
+		print(f'>> Pertemanan Tidak Public')
 		time.sleep(3)
 		back()
 #-------------------[ CRACK-PENGIKUT ]----------------#
@@ -387,7 +386,7 @@ balmond = b+"["+h+"✓"+b+"]"
 
 def lah():
 	print(f'\n{x}>> Total ID Yang Terkumpul :{h} %s '%(len(id)))
-	input(f'{x}>> [ {m}Klik Enter {x}] ')
+	input(f'{x}>> [ Klik Enter ] ')
 	print('')
 	pass
 	setting()
