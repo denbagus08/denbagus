@@ -382,7 +382,6 @@ def dump_pengikut():
 		print('>> Gagal Mengambil Target ')
 		exit()
 #------------------[ CRACK-GRUP ]-----------------#
-balmond = b+"["+h+"✓"+b+"]"
 
 def lah():
 	print(f'\n>> Total ID Yang Terkumpul : %s '%(len(id)))
