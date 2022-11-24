@@ -10,8 +10,6 @@ from rich.console import Group as gp
 from rich.panel import Panel as nel
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
-from rich import print as rprint
-from rich import pretty
 from rich.text import Text as tekz
 try:
         import rich
