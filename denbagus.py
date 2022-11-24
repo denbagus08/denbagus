@@ -65,7 +65,6 @@ for x in range(10000):
 	j='Configuration/CLDC-1.1'
 	k='VendorID/'
 	l=random.randrange(100, 999)
-	uaku=f'{a}{b}/{c}.{d}.{e}.{f} {g}{h}.{i} {j} {k}{l}'
 	#ugen2.append(uaku)
 def uaku():
 	try:
