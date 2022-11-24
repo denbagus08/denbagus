@@ -11,16 +11,6 @@ from rich.panel import Panel as nel
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 from rich.text import Text as tekz
-try:
-        import stdiomask
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
-        os.system('pip install stdiomask')
-try:
-	import requests
-except ImportError:
-	cetak(nel('\t• Sedang Menginstall Modul Requests •'))
-	os.system('pip install requests && pip install mechanize ')
 #------------------[ USER-AGENT ]-------------------#
 pretty.install()
 CON=sol()
