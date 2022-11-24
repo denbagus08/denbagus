@@ -34,7 +34,6 @@ except Exception as e:
 	i=random.randrange(1, 4)
 	j=random.randrange(1, 4)
 	k='Mobile Safari/535.1'
-	uaku=(f'{a}{b}.{c} {d}{e}{f}{g}.{h}.{i}.{j} {k}')
 	ugen2.append(uaku)
 
 for d in range(10000):
