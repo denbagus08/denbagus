@@ -604,7 +604,7 @@ def setting():
 	pwplus=input(' Tambahkan Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[blue] goyangan,janda,semok[white] '))
+		cetak Masukkan Katasandi Tambahan Minimal 6 Karakter Contoh : goyangan,janda,semok '))
 		pwku=input(' Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
