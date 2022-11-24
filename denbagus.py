@@ -12,11 +12,6 @@ from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 from rich.text import Text as tekz
 try:
-        import rich
-except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
-        os.system('pip install rich')
-try:
         import stdiomask
 except ImportError:
         cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
