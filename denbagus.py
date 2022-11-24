@@ -8,7 +8,6 @@ from bs4 import BeautifulSoup as parser
 from concurrent.futures import ThreadPoolExecutor as tred
 from rich.console import Group as gp
 from rich.panel import Panel as nel
-from rich import print as cetak
 from rich.markdown import Markdown as mark
 from rich.columns import Columns as col
 from rich import print as rprint
