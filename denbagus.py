@@ -739,7 +739,7 @@ def crackfree(idf,pwv):
 	fff = '%'
 	nip=random.choice(prox)
 	proxs= {'http': 'socks4://'+nip}
-	print('\r [%s●\33[m] %s/%s 💀 \x1b[1;92mOK:[%s] 💀 \x1b[1;93mCP:[%s] %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r [%s \33[m] %s/%s  \x1b[1;92mOK:[%s]  \x1b[1;93mCP:[%s] %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
