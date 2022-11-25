@@ -801,7 +801,7 @@ def crackfree(idf,pwv):
 						hit+=1
 						infoakun += (f"[{hit}] {muncul[0]} {muncul[1]")
 					print('\n')
-					statusok = f' ID       : {idf}\n[•] PASSWORD : {pw}\n{infoakun}'
+					statusok = f' ID       : {idf}\n PASSWORD : {pw}\n{infoakun}'
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title='OK'))
 					ok+=1
