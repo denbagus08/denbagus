@@ -1050,6 +1050,3 @@ if __name__=='__main__':
 	except:pass
 	time.sleep(3)
 	login()
-
-#>>>>> THANKS TO THIS HERE <<<<<<<#
-#>>>>> Alvino_Adijaya_Xy <<<<<#
